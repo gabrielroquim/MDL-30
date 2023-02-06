@@ -2,7 +2,6 @@ const productViewScreen = require("../screens/productView.screen")
 
 describe('Search products', () => {
 
-
     it('should search by Product test', async () => {
         let searchName = 'Product test'
         await productViewScreen.waitProduct(searchName)
