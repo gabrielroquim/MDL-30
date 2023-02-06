@@ -4,6 +4,6 @@ describe('Product List', () => {
 
     it('shoud list products', async () => {
         expect(await productViewScreen.product("Ingrid Running Jacket")).toExist()
-        expect(await productViewScreen.productList()).toBeElementsArrayOfSize(10)
+        expect(await productViewScreen.productlist()).toBeElementsArrayOfSize(10)
     })
 })
