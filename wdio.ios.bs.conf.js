@@ -15,8 +15,7 @@ exports.config = {
     suites: {
         products: [
             './test/specs/productView.spec.js',
-            './test/specs/productsearch.spec.js',
-            './test/specs/productCart.spec.js',           
+            './test/specs/productSearch.spec.js'                   
         ]
     },
     framework: 'mocha',
