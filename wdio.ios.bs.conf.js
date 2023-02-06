@@ -1,4 +1,4 @@
-const { join } = require('path')
+const join  = require('path')
 const allure = require('allure-commandline')
 const video = require('wdio-video-reporter');
 
@@ -14,10 +14,9 @@ exports.config = {
     ],
     suites: {
         products: [
-            './test/specs/products.spec.js',
-            './test/specs/productCart.spec.js',
-            './test/specs/search.spec.js',
-            
+            './test/specs/productView.spec.js',
+            './test/specs/productsearch.spec.js',
+            './test/specs/productCart.spec.js',           
         ]
     },
     framework: 'mocha',

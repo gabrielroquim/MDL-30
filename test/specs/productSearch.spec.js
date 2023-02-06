@@ -1,4 +1,4 @@
-const productViewScreen = require("../screens/productView.screen")
+const productViewScreen = require('../screens/productView.screen')
 
 describe('Search products', () => {
 
