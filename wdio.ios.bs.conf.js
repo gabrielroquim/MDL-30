@@ -5,8 +5,8 @@ const video = require('wdio-video-reporter');
 exports.config = {
 
     path: '/wd/hub',
-    user: "gabrielamorimdas_XUf4vO",
-    key: "KFvWTnxQvyEyrg3bhqKX",
+    user: "gabriel_serXLj",
+    key: "y27yoiFyeLyVzN1oNTro",
 
     services: ['browserstack'],
     specs: [
@@ -29,7 +29,7 @@ exports.config = {
             device: 'iPhone 12 Pro',
             os_version: "14",
             'browserstack.debug': true,
-            app: "bs://aaec6f8afb058a7a39c4ba88ba4f3bd3943ce541"
+            app: "bs://57792f79a13743ea7fdc01b2c25ea81c57d9b3c9"
         }
 
     ],
