@@ -8,8 +8,7 @@ describe('Search products', () => {
         await productViewScreen.waitProduct(searchName)
         await productViewScreen.search()
         await productViewScreen.searchBy(`${searchName}\n`)
-        
-       
-         expect(await productViewScreen.product(searchName)).toExist()
+
+        expect(await productViewScreen.product(searchName)).toExist()
     });
 })
