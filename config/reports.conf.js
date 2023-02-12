@@ -1,9 +1,8 @@
+require('dotenv').config()
 const allure = require('allure-commandline')
 const video = require('wdio-video-reporter');
 
-
 let reportersConf = process.env.REPORT == 'true' ? {
-
     reporters: ['spec',
         ['allure', {
             outputDir: 'allure-results',
@@ -36,3 +35,5 @@ let reportersConf = process.env.REPORT == 'true' ? {
         })
     }
 } : {}
+
+module.exports = { reportersConf }
