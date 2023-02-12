@@ -10,7 +10,7 @@ exports.config = {
 
     services: ['browserstack'],
     specs: [
-        './test/specs/**/*.spec.js'
+        './test/specs/**/*.specs.js'
     ],
     suites: {
         products: [
