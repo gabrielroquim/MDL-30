@@ -4,7 +4,7 @@ const { generalConf } = require('./general.conf')
 
 let capabilities = process.env.PLATFORM === 'android' ? {
     capabilities: [{
-        app: `${process.env.ANDROID_APP_ID}`,
+        app: `bs://${process.env.ANDROID_APP_ID}`,
         device: 'Samsung Galaxy Note 20',
         os_version: '10.0',
         project: 'Meu primeiro projeto em Device Farm',
@@ -13,7 +13,7 @@ let capabilities = process.env.PLATFORM === 'android' ? {
     }]
 } : {
     capabilities: [{
-        app: `${process.env.IOS_APP_ID}`,
+        app: `bs://${process.env.IOS_APP_ID}`,
         project: "Meu primeiro projeto Appium iOS BS",
         build: 'EBAC Test iOS',
         name: 'ebac_test',
