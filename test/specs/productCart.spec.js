@@ -3,7 +3,7 @@ const productsViewScreen = require('../screens/productView.screen')
 describe('Product Cart', () => {
 
     it('should buy a product', async () => {
-        let name = 'Jaqueta Sonic'
+        let name = 'Jaqueta'
         let searchName = 'Jaqueta'
         await productsViewScreen.waitProduct(name)
         await productsViewScreen.search()
@@ -14,5 +14,4 @@ describe('Product Cart', () => {
         expect (await productsViewScreen.waitTotal()).toExist()
     
     })
-    
 })

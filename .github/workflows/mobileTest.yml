@@ -26,7 +26,6 @@ jobs:
         run: npm t
       - name: Publish Report
         uses: peaceiris/actions-gh-pages@v3
-        if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./allure-report
+          publish_dir: ./mochawesome-report
