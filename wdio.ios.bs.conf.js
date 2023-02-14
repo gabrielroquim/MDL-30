@@ -1,6 +1,7 @@
 const join  = require('path')
 const allure = require('allure-commandline')
 const video = require('wdio-video-reporter');
+require('dotenv').config()
 
 exports.config = {
 
@@ -36,6 +37,7 @@ exports.config = {
     mochaOpts: {
         timeout: 300000
     },
+    
     reporters: ['spec',
         ['allure', {
             outputDir: 'allure-results',

@@ -1,4 +1,5 @@
 require('dotenv').config()
+
 const allure = require('allure-commandline')
 const video = require('wdio-video-reporter');
 
